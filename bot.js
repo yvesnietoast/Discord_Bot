@@ -1,3 +1,4 @@
+<script src='./config.js'></script>
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -21,7 +22,7 @@ client.on('message', (message) => {
             // Check if reminders are already running
             if (!reminderInterval) {
                 // Replace 'YOUR_CHANNEL_ID' with the actual channel ID where you want to send reminders
-                const channel = client.channels.cache.get('1021912504579928074');
+                const channel = client.channels.cache.get('CHANNEL_ID');
 
                 if (channel) {
                     channel.send('Water reminders started! Stay hydrated!');
